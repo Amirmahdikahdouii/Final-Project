@@ -1,7 +1,7 @@
 # myself Project
-import Phone
-import factorial
-import exercise35
+import ./Modules/Exercise_32
+import ./Modules/RecursiveFactorial
+import ./Modules/exercise35
 
 
 class Final:
@@ -70,7 +70,7 @@ class Final:
         address = input("Please enter your address: ")
         if address.lower() == "end":
             self.Exit()
-        a = Phone.irancell_num(shomare, address).maker()
+        a = Exercise_32.irancell_num(shomare, address).maker()
         return self.Starter()
         # ------------------------------
 
@@ -95,7 +95,7 @@ class Final:
                 else:
                     print("please Enter Correct Num: ")
                     continue
-        example = factorial.fact(1, y=num)
+        example = RecursiveFactorial.fact(1, y=num)
         print(f"{num}! : {example}")
         # -------------------------------
 
